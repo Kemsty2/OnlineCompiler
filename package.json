@@ -1,0 +1,23 @@
+{
+  "name": "online-compiler",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "prod": "pm2 start ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "child_process": "^1.0.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "formidable": "^1.1.1",
+    "hbs": "~4.0.1",
+    "jsonwebtoken": "^8.4.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "uuid": "^3.3.2"
+  }
+}

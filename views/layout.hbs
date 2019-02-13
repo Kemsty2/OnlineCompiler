@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Compiler - Project IHM">
+    <meta name="author" content="Kemsty">
+    
+    <title>Projet 4GI - Online Compiler</title>    
+    <script src="/javascripts/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/ace-builds/src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/ace-builds/src/ext-statusbar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/ace-builds/src/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/mdb.css" />
+    <link rel="stylesheet" href="/stylesheets/compiled.min.css" />
+    <link rel="stylesheet" href="/stylesheets/font-awesome.css " />
+    <link rel="stylesheet" href="/stylesheets/my_style.css" />
+
+  </head>
+  <body class="white-skin">
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong>Online Compiler</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-align-justify fa-2x"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                    </li>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            File
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" id="newfile" ><i class="fa fa-file"></i> <b style="margin-right: 52px;">New File</b> (Alt + N) </a>
+                            <a class="dropdown-item" id="openfile"><i class="fa fa-folder-open"></i> <b  style="margin-right: 40px;">Open File</b> (Alt + P) </a>
+                            <a class="dropdown-item download" ><i class="fa fa-download"></i> <b style="margin-right: 10px;">Download File</b> (Alt + D)</a>
+                        </div>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Edit
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">                            
+                            <a class="dropdown-item" href="#"><i class="fa fa-search"></i> Find </a>
+                        </div>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Compiler 
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item"  style="border-bottom: 1px solid black" id="compiler"><i class="fa fa-code"></i> <b style="margin-right: 30px;"> Compiler </b>   (Alt + R) </a>                                                                                  
+                        </div>
+                    </li>     
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item d-flex justify-content-between"  style="border-bottom: 1px solid black" href="#"><i class="fa fa-book"></i> Documentation </a>                            
+                            <a class="dropdown-item d-flex justify-content-between"  href="#"><i class="fa fa-github"></i> Contribute</a>                            
+                        </div>
+                    </li>                            
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="navbar-brand" href="#"> <strong> ENSP 4GI - 2019</strong></a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+
+    {{{body}}}
+
+    <footer class="container-fluid bg-white">
+        <span class="text-center "> Copyright © 2019 ENSP 4GI</span>
+    </footer>       
+    
+    <script src="/javascripts/popper.min.js" type="text/javascript"></script>
+    <script src="/javascripts/bootstrap.min.js" type="text/javascript" ></script>    
+    <script src="/javascripts/mdb.js" type="text/javascript" ></script>
+    <!--<script src="/javascripts/compiled.min.js" type="text/javascript" ></script>-->
+  </body>
+</html>

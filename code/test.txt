@@ -1,0 +1,32 @@
+/* file power.txt */
+algorithm power_calculation
+variables
+    real x
+    integer n
+functions_and_procedures
+    function power(real x, integer n) returns real
+    variables
+        real result
+        integer i
+    begin
+        if n = 0 then
+            return 1
+        endif
+        i := 0
+        result := 1
+        while i < n do
+            result := x * result
+            i := i + 1
+        endwhile
+        return result
+
+    end /* end function */
+
+begin
+    write("Enter the real number :")
+    read(x)
+    write("Enter the power : ")
+    read(n)
+    write(x, "^", n, " = ", power(x, n))
+
+end /* end algorithm */

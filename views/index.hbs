@@ -1,0 +1,118 @@
+<div class="container-fluid jumbotron mt-5 text-center dark-grey-text bg-white smooth-scroll">
+  <input id="upload-input" type="file" name="uploads[]" multiple="multiple">
+  <h1 class="h1-responsive text-center">Compilateur Version WEB</h1>
+  <p class="lead"></p>
+  <hr class="my-2">
+  <p>Online Compiler est un compilateur web pour le langage Algortihmique developpé par nous, etudiants de L'Ecole
+    Nationale
+    Superieure Polytechnique...
+  </p>
+  <a class="btn blue-gradient" href="#here">Commencer</a>
+</div>
+
+
+<div id="here" class="container mt-5 mb-5">
+  <div id="topbar" class="card">
+    <div id="settings" class="card-header blue-gradient">
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="theme"class="text-white">Choose Theme</label>
+            <select class="browser-default colorful-select form-control bg-white " name="theme" id="theme">
+              <option value="Light" selected>Light</option>
+              <option value="Monokai">Monokai</option>
+              <option value="Solarised Light">Solarised Light</option>
+              <option value="Twilight">Twilight</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-white">
+      <div class="row justify-content-center">
+        <pre id="editor" class="col-md-12"></pre>
+        <div id="editor-statusbar" class="col align-self-start"></div>
+      </div>
+    </div>
+    <div class="card-footer bg-white">
+      <div id="showres" class="row justify-content-between">
+        {{!--<div class="pull-left user-input-area col-md-6">
+          <div class="checkbox">
+            <input type="checkbox" id="user-input" class="form-group">
+            <label for="user-input">Cocher Pour Saisir Les Arguments</label>
+          </div>
+        </div>--}}
+        <div class="col-md-4">
+          <a id="download" class="btn blue-gradient btn-block align-self-center">Download Your Code</a>
+        </div>
+        <div class="run-save-panel col-md-4">
+          <button class="btn btn-block orange-gradient" id="runcode" data-toggle="tooltip" data-placement="top" title="Compile and Run">Compile Your Code</button>
+        </div>
+      </div>
+      {{!--<div class="row bg-white">
+        <div class="md-form input-container col-md-12">
+          <textarea type="text" id="custom-input" class="md-textarea" placeholder="Entrer Les Arguments Separés Par Des Virgules. Ex: Arg1, Arg2, ..."></textarea>
+          <label for="custom-input" class="text-center">Arguments Pour Votre Code</label>
+        </div>
+      </div>--}}
+      <div class="row">
+        <div class="outputbox col-md-12">
+          <div class="outputio">
+            <div class="outputerror">
+              <div class="errorkey"></div>
+              <pre class="errormessage"></pre>
+            </div>
+
+            <div class="io-show">
+              <b>Output</b>
+              <pre class="output-text outputo">
+                </pre>
+              <b>Input</b>
+              <pre class="output-text outputi"> </pre>
+            </div>
+          </div>
+
+          <div class="output-details row justify-content-start">
+            <a class="btn-floating orange-gradient btn-block btn-up" id="btn-up"><i class="fa fa-arrow-circle-o-up"></i></a>
+            <div class="correct log-details col-md-2">
+              <b>Log Details:</b>
+              <div id="demo"></div>
+
+              <script type="text/javascript">
+                var myDate = new Date();
+                var hours = myDate.getHours();
+                var minutes = myDate.getMinutes();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12;
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                var strTime = hours + ':' + minutes + ampm;
+                document.getElementById("demo").innerHTML = myDate.getDate() + "/" + (myDate.getMonth() + 1).toString() + "/" + myDate.getFullYear() + " at " + strTime;
+              </script>
+
+            </div>
+
+            <div class="correct time col-md-3">
+              <b>Time (sec)</b>
+              <div class="value"></div>
+            </div>
+            <div class="correct memory col-md-2">
+              <b>Memory (KB)</b>
+              <div class="value"></div>
+            </div>
+            <div class="correct runstat col-md-2">
+              <b>Run Status</b>
+              <div class="value"></div>
+            </div>
+            <div class="correct compilestat col-md-3">
+              <b>Compile Status</b>
+              <div class="value"></div>
+            </div>
+          </div>          
+        </div>        
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="/javascripts/my_js.js"></script>
